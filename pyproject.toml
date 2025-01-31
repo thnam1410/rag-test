@@ -1,0 +1,30 @@
+[project]
+name = "llm-test"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Nam Truong",email = "nam.truong@ansarada.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "boto3 (>=1.36.8,<2.0.0)",
+    "langchain-aws (>=0.2.11,<0.3.0)",
+    "langchain-community (>=0.3.16,<0.4.0)",
+    "python-dotenv (>=1.0.1,<2.0.0)",
+    "onnxruntime-silicon (>=1.16.3,<2.0.0)",
+    "langchain-openai (>=0.3.2,<0.4.0)",
+    "langchain-redis (>=0.1.2,<0.2.0)",
+    "langgraph (>=0.2.69,<0.3.0)"
+]
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+chromadb = "^0.6.3"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
